@@ -4,7 +4,13 @@
     font-family: sans-serif;
 }
 /* nav */
-.bg{
+.bg::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: .75;
     background: url(../asset/sentra-bahasa-inggris.jpg) no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -79,26 +85,71 @@
     line-height: 25px;
 }
 
+#h1{
+    font-size: 80px !important;
+    text-align: center;
+}
+
+#h2{
+    font-size: 65px !important ;
+    text-align: center;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 60%;
+}
+
 #btn-daftar{
-    color: green
+    display: flex;
+    text-decoration: none;
+    color: white;
+    background-color: #6CD06A;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px 15px;
+    gap: 10px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+#btn-daftar:hover{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    background-color: #b6e5b6;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px 15px;
+    gap: 10px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .content-row{
+    top: -90px;
+}
+
+.content-row,.testi-row{
+    position: relative;
     width: 80%;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
+    height: fit-content;
 }
 
-.content-col{
+.content-col, .testi-col{
     flex-basis: 28%;
-    padding: 10px;
+    padding: 30px;
     margin-bottom: 30px;
     border-radius: 5px;
-    box-shadow: 0 5px 5px 3px rgba(0, 128, 0, 0.432);
+    box-shadow: 0 5px 50px 3px rgba(0, 0, 0, 0.432);
     cursor: pointer;
+    background-color: white;
+    font-weight: bold;
 }
 /* .content end */
 
@@ -107,6 +158,7 @@
     width: 100%;
     margin-top: 50px;
     padding: 70px 0;
+    background-color: white;
 }
 
 .judul-home{
@@ -132,13 +184,31 @@
     border-top-left-radius: 35px;
     border-bottom-right-radius: 35px;
 }
+#galeri{
+    padding: 20px 80px;
+}
 
-.galeri{
+#kelas{
+    padding: 20px 70px;
+
+}
+.galeri,#row{
     width: 100%;
     padding: 70px 0;
-    background: #efefef;
+    background: white;
     text-align: center;
     font-weight: bold;
+    border-radius: 20px;
+}
+
+#row{
+    padding: 20px 80px;
+}
+
+#row .card{
+    height: 350px;
+    display: flex;
+    flex-direction: column;
 }
 
 .foto{
@@ -182,25 +252,7 @@
     
 }
 
-.testi-row{
-    width: 80%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    border: #efefef;
-}
 
-.testi-col{
-    flex-basis: 28%;
-    padding: 10px;
-    margin-bottom: 30px;
-    border-radius: 5px;
-    box-shadow: 0 5px 5px 3px rgba(254, 255, 254, 0.637);
-    cursor: pointer;
-    border: #efefef;
-}
 /* testi End */
 /* promo */
 .promo{
@@ -210,9 +262,28 @@
     background-attachment: fixed;
     width: 100%;
     height: 100vh;
-    text-align: center;
-    display: grid;
 }
+
+.promo p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: black !important;
+    height: 60%;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.bg-green{
+    text-decoration: none;
+    color: white;
+    background-color: #6CD06A;
+    align-items: flex-start;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+
 /* Footer */
 
 #footer-home{

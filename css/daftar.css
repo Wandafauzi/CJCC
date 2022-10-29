@@ -55,6 +55,14 @@
 .navbar ul li:hover::after{
     width: 100%;
 }
+/* content */
+#header{
+    text-align: center;
+}
+
+.form-container{
+    
+}
 
 /* Footer */
 

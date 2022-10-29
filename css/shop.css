@@ -64,14 +64,23 @@
 /* nav end */
 /* shop */
 
-.judul-shop{
+.judul{
     text-align: center;
 }
 
-.container-shop{
+#cari{
+    align-items: center;
+    justify-content: center;
+}
+
+#shop-content{
+    margin: 50px;
+    margin-bottom: 50px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minMax(220px, auto)) ;
+    grid-template-columns: repeat(auto-fit, minMax(400px, 400px)) ;
     gap: 1,5rem;
+    flex-wrap:wrap;
+    gap: 50px;
 }
 
 .produk-box{
@@ -81,6 +90,11 @@
     padding: 10px;
     border: 1px solid var(--text-color);
     transition: 0.4s;
+}
+
+.pagin{
+    align-items: center;
+    justify-content: center;
 }
 /* Footer */
 

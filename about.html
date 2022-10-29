@@ -29,30 +29,22 @@
     </section>
     <section>
     <!-- Carousel start -->
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
             <div class="carousel-item active">
-            <img src="https://source.unsplash.com/2000x650" class="d-block w-80" alt="...">
+                <img src="./asset/lorong.jpeg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-            <img src="https://source.unsplash.com/2000x650" class="d-block w-80" alt="...">
+                <img src="./asset/k-coding.jpg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-            <img src="https://source.unsplash.com/2000x650" class="d-block w-80" alt="...">
+                <img src="./asset/taman-3.jpeg" class="d-block w-100" alt="...">
             </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+            </div>
         </div>
     <!-- carousel end -->
     </section>
-    <section>
+    <section> 
         <div class="visi">
     <h3>Visi</h3>
         <p>“Membentuk generasi yang berakhlakul karimah, mandiri dan kreatif.”</p>
@@ -67,28 +59,28 @@
         <div class="sambutan">
         <h1>Sambutan Kepala Sekolah</h1>
             <p>Kepala Sekolah</p>
-            <img src="#" alt="Kepala Sekolah">
+            <img src="https://i.pravatar.cc/260" alt="Kepala Sekolah">
             <p>Drs.Aziz,M.Pd.</p>
+            <div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque minima nulla, fugit neque eos debitis, voluptas assumenda ratione repellendus voluptatibus qui eaque corrupti aliquam aperiam autem molestias perspiciatis. Qui quidem, cumque doloribus praesentium, cum, provident labore et ab a animi officia reprehenderit voluptatum asperiores perferendis eum? Harum, nostrum vitae cupiditate repellendus magni praesentium voluptas iure laboriosam ex ipsum laudantium facere rem eveniet ipsam voluptatem a unde ratione? Ea deleniti, ullam ut reprehenderit dolore nobis excepturi hic eius laudantium eaque nostrum maxime iure molestias delectus dolorem nulla quisquam possimus, magni amet culpa. Cumque minima quia id assumenda voluptatibus, reiciendis sunt</p>
+            </div>
         </div>
     </section>
-    <section>
-        <h1>Struktur Tenaga Pendidik </h1>
-        <p><b>Jabatan Pengajar</b></p>
-        <p><img src="https://i.pravatar.cc/260" style="border-radius: 100%;" alt="Foto Tenaga Pengajar"></p>
-        <p>Nama Pengajar</p>
+    <section class="struktur-pengajar">
+        <div class="container">
+            <div class="section-file">
+                <h2>Tenaga Pengajar</h2>
+            </div>
+            <div class="owl-carousel" id="tenaga-pendidik-slider">
+                <p><b>Jabatan Pengajar</b></p>
+                <img src="https://i.pravatar.cc/260" style="border-radius:  100%;" alt="Foto Tenaga Pengajar">
+                <p>Nama Pengajar</p>
+                <div class="sec-item">
+                </div>
+            </div>
+        </div>  
     </section>
     <section>
-        <h1>Testimoni</h1>
-        <div><p><img src="https://i.pravatar.cc/260" style="border-radius: 100%;" alt="foto orang"></p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, ab repellat. Natus voluptas quas excepturi blanditiis, praesentium, sed consectetur sit sunt eos, laborum rem nesciunt.</p>
-        </div>
-        <div><p><img src="https://i.pravatar.cc/260" style="border-radius: 100%;" alt="foto orang"></p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, ab repellat. Natus voluptas quas excepturi blanditiis, praesentium, sed consectetur sit sunt eos, laborum rem nesciunt.</p>
-        </div>
-        <div><p><img src="https://i.pravatar.cc/260" style="border-radius: 100%;" alt="foto orang"></p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, ab repellat. Natus voluptas quas excepturi blanditiis, praesentium, sed consectetur sit sunt eos, laborum rem nesciunt.</p>
-        </div>
     </section>
     <!-- Footer -->
     <section id="footer-home">
@@ -123,5 +115,20 @@
         </div>
     </section>
     <!-- Footer End -->
+    <script src="jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script>
+        $('#tenaga-pendidik-slider').owlCarousel({
+    loop:true,
+    nav:true,
+    margin:30,
+    item:3,
+    dots:false;
+    navText:[
+        '<i class="fa-angle-left" aria-hidden="true"></i>',
+        '<i class="fa-angle-right" aria-hidden="true"></i>'
+    ]
+        })
+    </script>
 </body>
 </html>
